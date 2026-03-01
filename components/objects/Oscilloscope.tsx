@@ -80,7 +80,7 @@ export default function Oscilloscope({ onClick }: { onClick: () => void }) {
       if (hovered) {
         ctx.strokeStyle = 'rgba(74,222,128,0.2)'
         ctx.lineWidth = 1
-        ctx.setLineDash([2, 4])
+        ctx.setLineDash([2, 4] as number[])
         // Horizontal traces
         [h * 0.25, h * 0.5, h * 0.75].forEach(y => {
           ctx.beginPath()
